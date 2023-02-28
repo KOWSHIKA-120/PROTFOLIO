@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel ="stylesheet" href="RESUME.css">
+    <script src="https://kit.fontawesome.com/f4c806891d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+<div class="container">
+    <nav>
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-text">
+     <h3> HI! I'm<span> Kowshika</span>,</h3>
+     <h4>Electronics and Instrumentation Engineering</h4>
+    </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                  <img src="IMG_20230227_204642.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About <span>me</span></h1>
+                <p><br>Probing for a challenging role which allows consistent learning and perfecting my skills and to secure
+                     employment.As well as to enhance my knowledge, encircling new and emerging trends in the sector.I can
+                      make use of my interpersonal skills to achieve the goals of the company.</p>
+                      <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('PERSONAL SKILLS')">PERSONAL SKILLS</p>
+                        <p class="tab-links" onclick="opentab('CORE SKILLS')">CORE SKILLS</p>
+                        <p class="tab-links "onclick="opentab('TECHNICAL SKILLS')">TECHNICAL SKILLS</p>
+                      </div>
+                      <div class="tab-contents active-tab" id="PERSONAL SKILLS">
+                        <ul>
+                            <li>Effective communication</li>
+                            <li> Leadership</li>
+                            <li>Creative thinking</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="CORE SKILLS">
+                        <ul>
+                            <li>Proteus</li>
+                            <li>Tinker Cad</li>
+                            <li>Arduino</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="TECHNICAL SKILLS">
+                        <ul>
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                      </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----servises--- -->
+<div id="education">
+    <div class="container">
+        <h1 class="sub-title"><span>E</span>ducation</h1>
+        <div class="education-list">
+            <div>
+                <i class="fa-solid fa-school"></i>
+                <h2>Bannari  Amman  Institute of Technology</h2>
+                <p>B.E ,Electronics and instrumentation engineering
+                    2020 - 2024, CGPA 8.27(Till 5th semester)</p>
+                    <a href="#">Learn more</a>
+              </div>
+          <div>
+            <i class="fa-solid fa-school"></i>
+            <h2>Royal international  school</h2>
+            <p>Higher Secondary school certificate
+                2019-2020,70.8%</p>
+                <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-school"></i>
+            <h2> Royal international  school</h2>
+            <p> Secondary School Leaving Certificate
+                2017-2018,63.2%</p>
+                <a href="#">Learn more</a>
+          </div>
+        </div>
+    </div>
+</div>
+
+
+<!--project-->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="IMG_20230228_114856.jpg" >
+                <div class="layer">
+                    <h3>IOT</h3>
+                    <P> Based universal gas detector and  health monitoring device</P>
+                </div>
+            </div>
+            <div class="work">
+                <img src="original-22037605dcfc9d8c90892b84d3e1ffb4.webp">
+                <div class="layer">
+                    <h3>WEB PAGE</h3>
+                    <P>  A portfolio website is a unique way to showcase our work and let others know about ourself.</P>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">contact me</h1>
+                <p><i class="fa-solid fa-envelope"></i>kowshika0003@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>6385528789</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kowshika-r-a88278218/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://instagram.com/kowshi_0_0?igshid=YmJhNjkzNzY="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/kowshika.kowshika.39904?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href=""class="btn">Download Resume</a>
+            </div>
+            <div class="contact-right"></div>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+            }
+</script>
+</body>
+</html>
